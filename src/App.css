@@ -1,0 +1,134 @@
+body {
+    font-family: system-ui;
+}
+
+.pokemon-card-root {
+    background-color: white;
+    width: 300px;
+    border-radius: 6px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.pokemon-card-root-circle {
+    background-color: orange;
+    width: 112%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.pokemon-health-pill-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pokemon-health-pill-badge {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 6px;
+}
+
+.pokemon-health-pill-label {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pokemon-health-pill-value {
+    color: black;
+    font-size: 14px;
+}
+
+.pokemon-card-wrapper {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pokemon-card-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pokemon-type-pill-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.pokemon-type-pill-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+.pokemon-type-pill-label {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pokemon-card-name-wrapper {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-name {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.pokemon-stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-stat-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-stat-value {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pokemon-stat-label {
+    color: grey;
+    font-size: 12px;
+}
